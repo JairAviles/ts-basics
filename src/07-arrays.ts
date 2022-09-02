@@ -11,12 +11,14 @@
   // products.push(123)
   console.log('products', products)
 
-  const mixed: (number | string | boolean | Object)[] = ['init', false]
+  const mixed: (number | string | boolean | object)[] = ['init', false]
   mixed.push(2016)
   mixed.push({}) // tmp
   mixed.push([]) // tmp
 
   const numbers = [1, 2, 3 , 6, 5, 4]
-  numbers.map(item => item * 2)
+  const updatedNumbers = numbers.map(item => item * 2)
 
+  console.log('numbers', numbers)
+  console.log('updatedNumbers', updatedNumbers)
 })()
